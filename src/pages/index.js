@@ -86,7 +86,7 @@ const IndexPage = () => {
           😎
         </span>
       </p>
-      <Link to="/about">About Nortop</Link>
+      <Link to="/about">About NorthTov</Link>
     </main>
   )
 }
