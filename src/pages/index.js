@@ -74,7 +74,7 @@ const IndexPage = () => {
     <main>
       <title>Home Page</title>
       <h1 style={headingStyles}>
-        Nortop's new site!!!
+        NorthTov's new site!!!
         <br />
         <span role="img" aria-label="Party popper emojis">
           🎉🎉🎉
