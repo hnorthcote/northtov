@@ -6,7 +6,7 @@ module.exports = {
   plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-sass", {
     resolve: 'gatsby-plugin-google-analytics',
     options: {
-      "trackingId": "G-8DR79YBC86"
+      "trackingId": "UA-3797385822"
     }
   }, "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
