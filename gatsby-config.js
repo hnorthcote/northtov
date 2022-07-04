@@ -1,9 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Nortop`,
+    title: `NorthTov`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-sass", {
+  plugins: ["gatsby-plugin-netlify-cms",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  {
     resolve: 'gatsby-plugin-google-analytics',
     options: {
       "trackingId": "UA-3797385822"
