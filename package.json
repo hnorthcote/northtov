@@ -1,9 +1,9 @@
 {
-  "name": "nortop",
+  "name": "northov",
   "version": "1.0.0",
   "private": true,
-  "description": "nortop",
-  "author": "Henry",
+  "description": "NorthTov site",
+  "author": "Henry Northcote",
   "keywords": [
     "gatsby"
   ],
