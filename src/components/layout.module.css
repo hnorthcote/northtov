@@ -1,3 +1,17 @@
+
+html, body, #___gatsby {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    background: linear-gradient(to bottom, white, gold);
+    color: white;
+}
+
+div[role="group"][tabindex] {
+    height: 100%;
+}
 .container {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
@@ -6,7 +20,7 @@
 }
 
 .heading  {
-    color: #DAA520;
+    color: black;
     margin-top: 0;
     margin-bottom: 6px;
 }
@@ -52,4 +66,5 @@
   .text {
     margin-top: 5rem;
     align-self: center;
+    color: blue;
   }

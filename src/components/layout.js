@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { heading }from './layout.module.css'
 import Header from './header'
+import './layout.module.css'
 
 
 
