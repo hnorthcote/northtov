@@ -6,6 +6,7 @@ import {    container,
             navLinks,
             navLinkItem,
             navLinkText,
+            navigation,
             top,
             logo} from './layout.module.css'
 
@@ -29,7 +30,7 @@ const Header = ({pageTitle}) => {
             />
             <div className={container}>
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-                <nav>
+                <nav className={navigation}>
                     <ul className={navLinks}>
                         <li className={navLinkItem}><Link to = "/" className={navLinkText}>Servicios</Link></li>
                         <li className={navLinkItem}><Link to = "/about" className={navLinkText}>Informacion</Link></li>
