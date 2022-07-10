@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 
 import {    container,
@@ -10,6 +10,16 @@ import {    container,
             logo} from './layout.module.css'
 
 const Header = ({pageTitle}) => {
+    const data = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
+        }
+    `)
+
     return (
         <div className={top}>
             <StaticImage
@@ -18,11 +28,12 @@ const Header = ({pageTitle}) => {
             src="../images/logo.png"
             />
             <div className={container}>
-                <title>{pageTitle}</title>
+            <title>{pageTitle} | {data.site.siteMetadata.title}</title>
                 <nav>
                     <ul className={navLinks}>
-                        <li className={navLinkItem}><Link to = "/" className={navLinkText}>Home</Link></li>
-                        <li className={navLinkItem}><Link to = "/about" className={navLinkText}>About</Link></li>
+                        <li className={navLinkItem}><Link to = "/" className={navLinkText}>Servicios</Link></li>
+                        <li className={navLinkItem}><Link to = "/about" className={navLinkText}>Informacion</Link></li>
+                        <li className={navLinkItem}><Link to="/contactar" className={navLinkText}>Contactar</Link></li>
                     </ul>
                 </nav>
             </div>
